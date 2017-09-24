@@ -1,8 +1,19 @@
 header {
   background-color: $blue;
-  padding:14px 0px 14px 15.5px;
+  padding-left: $gutter-default;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: $mobile) {
+    height: $header-height-mobile;
+  }
 }
 
-a.logo svg {
-  width: 35%;
+.logo-container {
+  width: $logo-width-mobile;
+  padding: $logo-padding-mobile 0;
+}
+
+.logo-container svg {
+  display: block;
 }
