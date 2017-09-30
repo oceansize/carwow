@@ -3,15 +3,27 @@ header {
   padding-left: $gutter-default;
   display: flex;
   align-items: center;
+  height: $header-height-mobile;
 
-  @media (max-width: $mobile) {
-    height: $header-height-mobile;
+  @include media(tablet) {
+    height: $header-height-default;
+  }
+
+  @include media(desktop) {
+    height: $header-height-default;
   }
 }
 
 .logo-container {
-  width: $logo-width-mobile;
-  padding: $logo-padding-mobile 0;
+  @include setLogoWidthAndPadding($logo-width-mobile, $logo-padding-mobile);
+
+  @include media(tablet) {
+    @include setLogoWidthAndPadding($logo-width-tablet, $logo-padding-tablet);
+  }
+
+  @include media(desktop) {
+    @include setLogoWidthAndPadding($logo-width-desktop, $logo-padding-desktop);
+  }
 }
 
 .logo-container svg {

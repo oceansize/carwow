@@ -1,10 +1,13 @@
 @import "reset.scss";
 @import "variables.scss";
+@import "mixins.scss";
 @import "header.scss";
+@import "page-title.scss";
 
 html {
   box-sizing: border-box;
   font-family: $base-font-family;
+  color: $dark-grey;
 }
 *, *:before, *:after {
   box-sizing: inherit;

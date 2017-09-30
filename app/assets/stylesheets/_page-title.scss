@@ -1,0 +1,22 @@
+.page-title {
+  background-color: $light-grey;
+  border-bottom: $border-style $border-width $mid-grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: $page-title-height;
+}
+
+.page-title h1 {
+  font-weight: $semibold;
+  font-size: $h1-mobile;
+  line-height: $h1-line-height;
+
+  @include media(tablet) {
+    font-size: $h1-default;
+  }
+
+  @include media(desktop) {
+    font-size: $h1-default;
+  }
+}

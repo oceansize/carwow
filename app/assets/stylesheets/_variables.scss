@@ -1,14 +1,38 @@
-// Fonts
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
-$montserrat: 'Montserrat', sans-serif;
-$base-font-family: $montserrat;
-
-// Layout
-$gutter-default: 16px;
+// Border
+$border-style: solid;
+$border-width: 1px;
 
 // Breakpoints
-$mobile: "320px";
+$tablet-screen-size: 768px;
+$desktop-screen-size: 1440px;
+
+// Brand Marks
+$logo-width-mobile: 126px;
+$logo-width-tablet: 159px;
+$logo-width-desktop: 142.5px;
+
+$logo-padding-mobile: 14px;
+$logo-padding-tablet: 23px;
+$logo-padding-desktop: 25px;
 
 // Colors
 $blue: #00a4ff;
 $light-grey: #f5f5f5;
+$mid-grey: #dddddd;
+$dark-grey: #4d4f52;
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
+$base-font-family: 'Montserrat', sans-serif;
+
+$h1-line-height: 48px;
+$h1-default: 40px;
+$h1-mobile: 32px;
+$bold: 700;
+$semibold: 600;
+
+// Layout
+$gutter-default: 15.5px;
+$header-height-mobile: 48px;
+$header-height-default: 72px;
+$page-title-height: 200px;
