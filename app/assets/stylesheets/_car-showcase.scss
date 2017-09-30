@@ -1,0 +1,12 @@
+.car-showcase {
+  padding: $gutter-default;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include media(tablet) {
+  }
+
+  @include media(desktop) {
+  }
+}

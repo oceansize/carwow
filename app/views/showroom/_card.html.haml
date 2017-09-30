@@ -1,0 +1,13 @@
+-# all available data: car[:make], car[:model], car[:engine], car[:details], car[:image_name], car[:has_new_offer]
+%figure{class: "card"}
+  %div{class: "card-image-container"}
+    %img{:src => asset_path(car[:image_name])}
+  %figcaption
+    %div{class: "card-details"}
+      %div{class: "card-title-container"}
+        =car[:make]
+        =car[:model]
+  - if car[:has_new_offer]
+    1 new offer
+-# you can load the car photo with the following snippit of code:
+-#  %img{:src => asset_path(car[:image_name])}
