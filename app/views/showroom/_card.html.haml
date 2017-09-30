@@ -5,9 +5,9 @@
   %figcaption
     %div{class: "card-details"}
       %div{class: "card-title-container"}
-        =car[:make]
-        =car[:model]
+        %h4{class: "make"}=car[:make]
+        %h3{class: "model"}=car[:model]
+        %p{class: "engine"}=car[:engine]
+        %p{class: "details"}=car[:details]
   - if car[:has_new_offer]
-    1 new offer
--# you can load the car photo with the following snippit of code:
--#  %img{:src => asset_path(car[:image_name])}
+    %a{href: "#", class: "btn btn-with-cheese"} 1 new offer
