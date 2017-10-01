@@ -1,0 +1,65 @@
+.card {
+  position: relative;
+  distify-content: flex-start;
+  border: $border-style $border-width $ash;
+  margin-bottom: $gutter-default * 2;
+  border-radius: $card-border-radius;
+  overflow: hidden;
+}
+
+.card-image-container {
+  display: flex;
+  position: relative;
+}
+.image-gradient:after {
+    content: '';
+    position:absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to left, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 125%);
+    z-index: 1;
+}
+.card-toolbar {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: $gutter-default;
+  z-index: 2;
+}
+
+.card-label {
+  position: absolute;
+  align-self: center;
+  padding: $gutter-default;
+  z-index: 3;
+}
+.card-specifications {
+  padding: $gutter-default;
+}
+
+.make, .model {
+  color: $white;
+}
+
+.make {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.model {
+  font-size: 22px;
+  font-weight: $semibold;
+}
+
+.engine {
+  font-weight: $semibold;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.details {
+  font-size: 14px;
+  line-height: 20px;
+}

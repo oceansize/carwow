@@ -1,13 +1,15 @@
 -# all available data: car[:make], car[:model], car[:engine], car[:details], car[:image_name], car[:has_new_offer]
-%figure{class: "card"}
+%div{class: "card"}
   %div{class: "card-image-container"}
-    %img{:src => asset_path(car[:image_name])}
-  %figcaption
-    %div{class: "card-details"}
-      %div{class: "card-title-container"}
-        %h4{class: "make"}=car[:make]
-        %h3{class: "model"}=car[:model]
-        %p{class: "engine"}=car[:engine]
-        %p{class: "details"}=car[:details]
-  - if car[:has_new_offer]
-    %a{href: "#", class: "btn btn-with-cheese"} 1 new offer
+    %div{class: "image-gradient"}
+      %img{src: asset_path(car[:image_name]), class: "card-image"}
+    %div{class: "card-label"}
+      %h4{class: "make"}=car[:make]
+      %h3{class: "model"}=car[:model]
+  %div{class: "card-toolbar"}
+    = link_to render_svg("archive_icon.svg"), '#', class: "btn btn-delete"
+    - if car[:has_new_offer]
+      %a{href: "#", class: "btn btn-offer"} 1 new offer
+  %div{class: "card-specifications"}
+    %p{class: "engine"}=car[:engine]
+    %p{class: "details"}=car[:details]

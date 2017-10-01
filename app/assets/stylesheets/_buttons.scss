@@ -1,0 +1,23 @@
+.btn {
+  border-radius: $button-border-radius;
+  text-decoration: none;
+  text-align: center;
+  padding: $button-padding;
+  display: inline-block;
+}
+
+.btn-offer {
+  background-color: $blue;
+  font-size: $button-font-size;
+  color: $white;
+  letter-spacing: $button-letter-spacing;
+}
+
+.btn-delete {
+  position: absolute;
+  top: $delete-button-margin;
+  right: $delete-button-margin;
+  padding: 0;
+  clear: left;
+  float: right;
+}
