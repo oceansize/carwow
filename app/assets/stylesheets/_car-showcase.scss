@@ -8,7 +8,6 @@
   max-width: $mobile-screen-size;
 
   @include media(tablet) {
-    min-width: $mobile-screen-size + 1;
     max-width: $tablet-screen-size;
   }
 
