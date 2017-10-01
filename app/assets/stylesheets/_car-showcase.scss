@@ -1,12 +1,18 @@
 .car-showcase {
-  padding: $gutter-default;
+  padding: $gutter-default * 2;
   display: flex;
+  justify-content: space-around;
   flex-direction: column;
-  align-items: center;
+  flex-flow: row wrap;
+  margin: 0 auto;
+  max-width: $mobile-screen-size;
 
   @include media(tablet) {
+    min-width: $mobile-screen-size + 1;
+    max-width: $tablet-screen-size;
   }
 
   @include media(desktop) {
+    max-width: $desktop-screen-size;
   }
 }

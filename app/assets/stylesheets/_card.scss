@@ -1,16 +1,25 @@
 .card {
+  align-self: center;
   position: relative;
-  distify-content: flex-start;
   border: $border-style $border-width $ash;
   margin-bottom: $gutter-default * 2;
   border-radius: $card-border-radius;
   overflow: hidden;
+  max-width: $mobile-screen-size - ($gutter-default * 2);
+  flex-grow: 1;
 }
 
 .card-image-container {
   display: flex;
   position: relative;
 }
+
+.card-image-container,
+.card-image-container img {
+  max-height: 170px;
+  width: 100%;
+}
+
 .image-gradient:after {
     content: '';
     position:absolute;

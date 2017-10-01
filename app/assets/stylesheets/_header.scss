@@ -1,4 +1,6 @@
 header {
+  max-width: $mobile-screen-size;
+  margin: 0 auto;
   background-color: $blue;
   padding-left: $gutter-default;
   display: flex;
@@ -7,10 +9,12 @@ header {
 
   @include media(tablet) {
     height: $header-height-default;
-  }
+    min-width: $mobile-screen-size + 1;
+    max-width: $tablet-screen-size;  }
 
   @include media(desktop) {
     height: $header-height-default;
+    max-width: $desktop-screen-size;
   }
 }
 
