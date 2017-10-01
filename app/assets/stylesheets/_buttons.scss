@@ -21,3 +21,7 @@
   clear: left;
   float: right;
 }
+
+.btn-delete svg {
+  @include setSubtleDropShadow;
+}

@@ -17,14 +17,14 @@ $logo-padding-desktop: 25px;
 
 
 // Button
-$button-font-size: 14px;
 $button-letter-spacing: 1px;
 $button-padding: 4px 20px;
 $delete-button-margin: 8px;
-
+// For button fonts, see 'Fonts' section
 
 // Colors
 $ash: #eeeeee;
+$black: #000000;
 $blue: #00a4ff;
 $dark-grey: #4d4f52;
 $light-grey: #f5f5f5;
@@ -35,15 +35,20 @@ $white: #ffffff;
 $button-border-radius: 16px;
 $card-border-radius: 6px;
 
+// Effects
+$icon-drop-shadow: rgba(0,0,0,0.75);
+
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
 $base-font-family: 'Montserrat', sans-serif;
+$bold: 700;
+$semibold: 600;
 
 $h1-line-height: 48px;
 $h1-default: 40px;
 $h1-mobile: 32px;
-$bold: 700;
-$semibold: 600;
+
+$button-font-size: 14px;
 
 // Layout
 $gutter-default: 16px;
