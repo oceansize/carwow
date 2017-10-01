@@ -41,22 +41,22 @@
 }
 
 .make {
-  font-size: 15px;
-  margin-bottom: 10px;
+  font-size: $font-size-make-mobile;
+  margin-bottom: $gutter-default - 4;
 }
 
 .model {
-  font-size: 22px;
+  font-size: $font-size-model-mobile;
   font-weight: $semibold;
 }
 
 .engine {
   font-weight: $semibold;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: $font-size-engine-mobile;
+  line-height: $line-height-engine-mobile;
 }
 
 .details {
-  font-size: 14px;
-  line-height: 20px;
+  font-size: $font-size-details-mobile;
+  line-height: $line-height-details-mobile;
 }
