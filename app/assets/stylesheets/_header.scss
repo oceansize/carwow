@@ -5,7 +5,6 @@ header {
 .wrapper {
   max-width: $mobile-screen-size;
   margin: 0 auto;
-  background-color: $blue;
   padding-left: $gutter-default;
   display: -ms-flexbox;
   display: -webkit-box;
@@ -16,11 +15,13 @@ header {
   height: $header-height-mobile;
 
   @include media(tablet) {
+    padding-left: $gutter-default * 4;
     height: $header-height-default;
     min-width: $mobile-screen-size + 1;
     max-width: $tablet-screen-size;  }
 
   @include media(desktop) {
+    padding-left: $gutter-default * 4;
     height: $header-height-default;
     max-width: $desktop-screen-size;
   }

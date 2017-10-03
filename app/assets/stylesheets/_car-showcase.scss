@@ -1,5 +1,5 @@
 .car-showcase {
-  padding: $gutter-default * 2;
+  padding: ($gutter-default * 2) 0;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
@@ -24,10 +24,12 @@
 }
 
   @include media(tablet) {
+    padding: ($gutter-default * 2) ($gutter-default * 3);
     max-width: $tablet-screen-size;
   }
 
   @include media(desktop) {
+    padding: ($gutter-default * 2) ($gutter-default * 3);
     max-width: $desktop-screen-size;
   }
 }
