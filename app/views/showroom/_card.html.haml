@@ -1,7 +1,5 @@
 %div{class: "card"}
-  %div{class: "card-image-container"}
-    %div{class: "image-gradient"}
-      %img{src: asset_path(car[:image_name]), class: "card-image"}
+  %div{class: "card-image-container", style: 'background-image: url('"#{asset_path(car[:image_name])}"')'}
     %div{class: "card-label"}
       %h4{class: "make"}=car[:make]
       %h3{class: "model"}=car[:model]

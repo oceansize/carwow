@@ -5,24 +5,30 @@ header {
 .wrapper {
   max-width: $mobile-screen-size;
   margin: 0 auto;
-  background-color: $blue;
   padding-left: $gutter-default;
+  display: -ms-flexbox;
+  display: -webkit-box;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: $header-height-mobile;
 
   @include media(tablet) {
+    padding-left: $gutter-default * 4;
     height: $header-height-default;
     min-width: $mobile-screen-size + 1;
     max-width: $tablet-screen-size;  }
 
   @include media(desktop) {
+    padding-left: $gutter-default * 4;
     height: $header-height-default;
     max-width: $desktop-screen-size;
   }
 }
 
 .logo-container {
+  display: inline-block;
   @include setLogoWidthAndPadding($logo-width-mobile, $logo-padding-mobile);
 
   @include media(tablet) {

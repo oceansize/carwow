@@ -32,8 +32,7 @@ blockquote {
 
 q {
   &:before, &:after {
-    content: '';
-    content: none; } }
+    content: ''; } }
 
 table {
   border-collapse: collapse;
