@@ -1,32 +1,45 @@
 .card {
-  align-self: center;
+  -ms-flex-item-align: center;
+           align-self: center;
   position: relative;
   border: $border-style $border-width $ash;
   margin-bottom: $gutter-default * 2;
   border-radius: $card-border-radius;
   overflow: hidden;
   max-width: $mobile-screen-size - ($gutter-default * 2);
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .card-image-container {
+  width: 288px;
+  height: 170px;
+  background-size: cover;
+  background-position: 50% 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -webkit-box-pack: start;
+     -ms-flex-pack: start;
+   justify-content: flex-start;
+  -webkit-box-align: center;
+     -ms-flex-align: center;
+        align-items: center;
   position: relative;
-}
 
-.card-image-container,
-.card-image-container img {
-  max-height: 170px;
-  width: 100%;
-}
-
-.image-gradient:after {
+  &:before {
     content: '';
-    position:absolute;
-    @include setPositionToCover;
-    @include setCardGradient;
-    z-index: 1;
+	position: absolute;
+	@include setPositionToCover;
+  @include setCardGradient;
+  }
 }
+
 .card-toolbar {
   position: absolute;
   top: 0;
@@ -37,10 +50,11 @@
 
 .card-label {
   position: absolute;
-  align-self: center;
+  -ms-flex-item-align: center;
+           align-self: center;
   padding: $gutter-default;
-  z-index: 3;
 }
+
 .card-specifications {
   padding: $gutter-default;
 }
