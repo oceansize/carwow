@@ -17,7 +17,7 @@
   max-width: $mobile-screen-size;
 
   &:after {
-  width: 288px;
+  width: $card-width;
   height: 0;
   content: "";
   display: inline-block;

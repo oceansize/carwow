@@ -13,8 +13,8 @@
 }
 
 .card-image-container {
-  width: 288px;
-  height: 170px;
+  width: $card-width;
+  height: $card-height;
   background-size: cover;
   background-position: 50% 50%;
   display: -webkit-box;
