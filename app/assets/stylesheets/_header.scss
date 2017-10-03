@@ -27,6 +27,7 @@ header {
 }
 
 .logo-container {
+  display: inline-block;
   @include setLogoWidthAndPadding($logo-width-mobile, $logo-padding-mobile);
 
   @include media(tablet) {

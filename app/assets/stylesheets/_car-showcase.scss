@@ -16,6 +16,13 @@
   margin: 0 auto;
   max-width: $mobile-screen-size;
 
+  &:after {
+  width: 288px;
+  height: 0;
+  content: "";
+  display: inline-block;
+}
+
   @include media(tablet) {
     max-width: $tablet-screen-size;
   }
