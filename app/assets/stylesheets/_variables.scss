@@ -50,8 +50,18 @@ $header-font__line-height: 48px;
 $header-font__size: 40px;
 $header-font__size--mobile: 32px;
 
-$font-size__card__make--mobile: 15px;
-$font-size__card__model--mobile: 22px;
+$line-height__card__technical-specifications: 20px;
+$line-height__card__technical-specifications--tablet: 24px;
+
+$line-height__card__make: 24px;
+$font-size__card__make: 18px;
+$font-size__card__make--mobile: 16px;
+
+$line-height__card__model: 40px;
+$line-height__card__model--tablet: 32px;
+$font-size__card__model: 28px;
+$font-size__card__model--mobile: 24px;
+
 $font-size__card__engine--mobile: 16px;
 $font-size__card__details--mobile: 14px;
 
@@ -62,8 +72,10 @@ $button__font-size: 14px;
 
 // Layout
 $gutter-size--default: 16px;
+$page-title-container__height: 200px;
+
 $branding-area__height--mobile: 48px;
 $branding-area__height: 72px;
-$page-title-container__height: 200px;
+
 $card__width: 288px;
 $card__height: 170px;

@@ -56,6 +56,16 @@
 
 .card__technical-specifications {
   padding: $gutter-size--default;
+  line-height: $line-height__card__technical-specifications;
+
+  @include media(tablet) {
+    line-height: $line-height__card__technical-specifications;
+  }
+
+  @include media(desktop) {
+    font-size: $font-size__card__make;
+    line-height: $line-height__card__technical-specifications;
+  }
 }
 
 .card__make, .card__model {
@@ -65,15 +75,31 @@
 .card__make {
   font-size: $font-size__card__make--mobile;
   margin-bottom: $gutter-size--default - 4;
+  line-height: $line-height__card__make;
 
   @include media(tablet) {
+    font-size: $font-size__card__make;
+  }
 
+  @include media(desktop) {
+    font-size: $font-size__card__make;
   }
 }
 
 .card__model {
   font-size: $font-size__card__model--mobile;
   font-weight: $font-weight--semibold;
+  line-height: $line-height__card__model;
+
+  @include media(tablet) {
+    font-size: $font-size__card__model;
+    line-height: $line-height__card__model--tablet;
+  }
+
+  @include media(desktop) {
+    font-size: $font-size__card__model;
+    line-height: $line-height__card__model;
+  }
 }
 
 .card__engine {

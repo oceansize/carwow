@@ -22,6 +22,7 @@
 
   @include media(desktop) {
     padding-left: $gutter-size--default * 4;
+    height: $branding-area__height;
     max-width: $breakpoint--desktop;
   }
 }
