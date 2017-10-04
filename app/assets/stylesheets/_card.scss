@@ -6,10 +6,27 @@
   margin-bottom: $gutter-size--default * 2;
   border-radius: $border-radius--card;
   overflow: hidden;
-  max-width: $breakpoint--mobile - ($gutter-size--default * 2);
+  max-width: $breakpoint--mobile;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+          float: left;
+
+  @include media(tablet) {
+    margin-right: $gutter-size--default * 2;
+
+    &:nth-of-type(2n) {
+      margin-right: 0;
+    }
+  }
+
+  @include media(desktop) {
+    margin-right: $gutter-size--default * 2;
+
+    &:nth-of-type(4n) {
+      margin-right: 0;
+    }
+  }
 }
 
 .card__image-container {
