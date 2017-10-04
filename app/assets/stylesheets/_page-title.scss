@@ -15,14 +15,21 @@
 
 .page-title__header {
   font-weight: $font-weight--semibold;
-  font-size: $header-font__size--mobile;
-  line-height: $header-font__line-height;
+  font-size: $font-size__header--mobile;
+  @include calculateLineHeight($font-size__header--mobile);
 
   @include media(tablet) {
-    font-size: $header-font__size;
+    font-size: $font-size__header;
+    @include calculateLineHeight($font-size__header);
   }
 
   @include media(desktop) {
-    font-size: $header-font__size;
+    font-size: $font-size__header;
+    @include calculateLineHeight($font-size__header);
+  }
+
+  @include media(desktop-large) {
+    font-size: $font-size__header;
+    @include calculateLineHeight($font-size__header);
   }
 }
