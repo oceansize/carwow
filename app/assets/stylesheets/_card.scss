@@ -78,6 +78,7 @@
            align-self: center;
   padding: $gutter-size--default;
   color: $colour--white;
+  @include setTextDropShadow;
 }
 
 .card__technical-specifications {
