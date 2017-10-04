@@ -65,10 +65,14 @@
 .card__make {
   font-size: $font-size__card__make--mobile;
   margin-bottom: $gutter-size--default - 4;
+
+  @include media(tablet) {
+
+  }
 }
 
 .card__model {
-  font-size: font-size__card__make--mobile;
+  font-size: $font-size__card__model--mobile;
   font-weight: $font-weight--semibold;
 }
 
