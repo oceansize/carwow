@@ -19,6 +19,11 @@
     padding: ($gutter-size--default * 2) ($gutter-size--default * 3);
     max-width: $breakpoint--desktop;
   }
+
+  @include media(desktop-large) {
+    padding: ($gutter-size--default * 2) ($gutter-size--default * 3);
+    max-width: $breakpoint--desktop-large;
+  }
 }
 
 .clearfix {

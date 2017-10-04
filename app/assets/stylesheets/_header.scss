@@ -25,6 +25,12 @@
     height: $branding-area__height;
     max-width: $breakpoint--desktop;
   }
+
+  @include media(desktop-large) {
+    padding-left: $gutter-size--default * 4;
+    height: $branding-area__height;
+    max-width: $breakpoint--desktop-large;
+  }
 }
 
 .branding-area__logo-container {
@@ -36,6 +42,10 @@
   }
 
   @include media(desktop) {
+    @include setLogoWidthAndPadding($logo__width--desktop, $logo__padding--desktop);
+  }
+
+  @include media(desktop-large) {
     @include setLogoWidthAndPadding($logo__width--desktop, $logo__padding--desktop);
   }
 }

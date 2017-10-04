@@ -5,7 +5,8 @@ $border-width: 1px;
 // Breakpoints
 $breakpoint--mobile: 288px;
 $breakpoint--tablet: 705px;
-$breakpoint--desktop: 1345px;
+$breakpoint--desktop: 1060px;
+$breakpoint--desktop-large: 1345px;
 
 // Brand Marks
 $logo__width--mobile: 126px;
@@ -46,27 +47,17 @@ $font-family--base: 'Montserrat', sans-serif;
 $font-weight--bold: 700;
 $font-weight--semibold: 600;
 
-$header-font__line-height: 48px;
-$header-font__size: 40px;
-$header-font__size--mobile: 32px;
-
-$line-height__card__technical-specifications: 20px;
-$line-height__card__technical-specifications--tablet: 24px;
-
-$line-height__card__make: 24px;
+$font-size__header: 40px;
+$font-size__header--mobile: 32px;
 $font-size__card__make: 18px;
 $font-size__card__make--mobile: 16px;
-
-$line-height__card__model: 40px;
-$line-height__card__model--tablet: 32px;
 $font-size__card__model: 28px;
 $font-size__card__model--mobile: 24px;
+$font-size__card__engine: 16px;
+$font-size__card__details: 14px;
 
-$font-size__card__engine--mobile: 16px;
-$font-size__card__details--mobile: 14px;
+$line-height__ratio--card-label: 1.1;
 
-$line-height__card__engine--mobile: 20px;
-$line-height__card__details--mobile: 20px;
 
 $button__font-size: 14px;
 

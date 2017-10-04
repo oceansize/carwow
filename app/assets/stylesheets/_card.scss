@@ -23,6 +23,14 @@
   @include media(desktop) {
     margin-right: $gutter-size--default * 2;
 
+    &:nth-of-type(3n) {
+      margin-right: 0;
+    }
+  }
+
+  @include media(desktop-large) {
+    margin-right: $gutter-size--default * 2;
+
     &:nth-of-type(4n) {
       margin-right: 0;
     }
@@ -69,63 +77,53 @@
   -ms-flex-item-align: center;
            align-self: center;
   padding: $gutter-size--default;
+  color: $colour--white;
 }
 
 .card__technical-specifications {
   padding: $gutter-size--default;
-  line-height: $line-height__card__technical-specifications;
-
-  @include media(tablet) {
-    line-height: $line-height__card__technical-specifications;
-  }
-
-  @include media(desktop) {
-    font-size: $font-size__card__make;
-    line-height: $line-height__card__technical-specifications;
-  }
-}
-
-.card__make, .card__model {
-  color: $colour--white;
 }
 
 .card__make {
   font-size: $font-size__card__make--mobile;
+  @include calculateLineHeight($font-size__card__make--mobile, $line-height__ratio--card-label);
   margin-bottom: $gutter-size--default - 4;
-  line-height: $line-height__card__make;
 
   @include media(tablet) {
     font-size: $font-size__card__make;
+    @include calculateLineHeight($font-size__card__make, $line-height__ratio--card-label);
   }
 
   @include media(desktop) {
     font-size: $font-size__card__make;
+    @include calculateLineHeight($font-size__card__make, $line-height__ratio--card-label);
   }
 }
 
 .card__model {
   font-size: $font-size__card__model--mobile;
   font-weight: $font-weight--semibold;
-  line-height: $line-height__card__model;
+  @include calculateLineHeight($font-size__card__model--mobile, $line-height__ratio--card-label);
+
 
   @include media(tablet) {
     font-size: $font-size__card__model;
-    line-height: $line-height__card__model--tablet;
+    @include calculateLineHeight($font-size__card__model, $line-height__ratio--card-label);
   }
 
   @include media(desktop) {
     font-size: $font-size__card__model;
-    line-height: $line-height__card__model;
+    @include calculateLineHeight($font-size__card__model, $line-height__ratio--card-label);
   }
 }
 
 .card__engine {
   font-weight: $font-weight--semibold;
-  font-size: $font-size__card__engine--mobile;
-  line-height: $line-height__card__engine--mobile;
+  font-size: $font-size__card__engine;
+  @include calculateLineHeight($font-size__card__engine);
 }
 
 .card__details {
-  font-size: $font-size__card__details--mobile;
-  line-height: $line-height__card__details--mobile;
+  font-size: $font-size__card__details;
+  @include calculateLineHeight($font-size__card__details);
 }

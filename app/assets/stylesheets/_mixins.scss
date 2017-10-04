@@ -6,11 +6,15 @@
     }
   }
   @else if $type == desktop {
-    @media only screen and (min-width: $breakpoint--desktop) {
+    @media only screen and (min-width: $breakpoint--desktop) and (max-width: $breakpoint--desktop-large - 1) {
       @content;
     }
   }
-}
+  @else if $type == desktop-large {
+    @media only screen and (min-width: $breakpoint--desktop-large) {
+      @content;
+    }
+  }}
 
 @mixin setLogoWidthAndPadding($width: 100%, $padding: 10px) {
   width: $width;
@@ -32,4 +36,8 @@
 @mixin setSubtleDropShadow {
   -webkit-filter: drop-shadow( 0px 0px 5px $drop-shadow--icon );
           filter: drop-shadow( 0px 0px 5px $drop-shadow--icon );
+}
+
+@mixin calculateLineHeight($font-size: 16px, $ratio: 1.5) {
+  line-height: $font-size * $ratio;
 }
