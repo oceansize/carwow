@@ -1,29 +1,26 @@
 .btn {
-  border-radius: $button-border-radius;
+  border-radius: $border-radius--button;
   text-decoration: none;
   text-align: center;
-  padding: $button-padding;
+  padding: $button__padding;
   display: inline-block;
 }
 
-.btn-offer {
-  background-color: $blue;
-  font-size: $button-font-size;
-  color: $white;
-  letter-spacing: $button-letter-spacing;
+.btn--offer {
+  background-color: $colour--blue;
+  font-size: $button__font-size;
+  color: $colour--white;
+  letter-spacing: $button__letter-spacing;
 }
 
-.btn-delete {
-  width: 32px;
-  height: 32px;
+.btn--delete {
+  width: $button__size--delete;
+  height: $button__size--delete;
   position: absolute;
-  top: $delete-button-margin;
-  right: $delete-button-margin;
+  top: $button__margin--delete;
+  right: $button__margin--delete;
   padding: 0;
   clear: left;
   float: right;
-}
-
-.btn-delete svg {
   @include setSubtleDropShadow;
 }

@@ -1,11 +1,6 @@
 = render partial: "header"
 = render partial: "page-title", locals: { title: "Your Showroom" }
 
--# you can add comments like this
-
--# the data for the cars to show will be provided to the this file via the showroom_controller
--# here is an example of how to loop over all the cars and pull out the data you need:
-
 %article{class: "car-showcase"}
   - @cars.each do |car|
     = render partial: "card", locals: {car: car}

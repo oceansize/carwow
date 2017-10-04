@@ -1,12 +1,12 @@
 @mixin media($type) {
 
   @if $type == tablet {
-    @media only screen and (min-width: $tablet-screen-size) and (max-width: $desktop-screen-size - 1) {
+    @media only screen and (min-width: $breakpoint--tablet) and (max-width: $breakpoint--desktop - 1) {
       @content;
     }
   }
   @else if $type == desktop {
-    @media only screen and (min-width: $desktop-screen-size) {
+    @media only screen and (min-width: $breakpoint--desktop) {
       @content;
     }
   }
@@ -30,6 +30,6 @@
 }
 
 @mixin setSubtleDropShadow {
-  -webkit-filter: drop-shadow( 0px 0px 5px $icon-drop-shadow );
-          filter: drop-shadow( 0px 0px 5px $icon-drop-shadow );
+  -webkit-filter: drop-shadow( 0px 0px 5px $drop-shadow--icon );
+          filter: drop-shadow( 0px 0px 5px $drop-shadow--icon );
 }

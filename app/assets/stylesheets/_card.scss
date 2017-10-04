@@ -2,19 +2,19 @@
   -ms-flex-item-align: center;
            align-self: center;
   position: relative;
-  border: $border-style $border-width $ash;
-  margin-bottom: $gutter-default * 2;
-  border-radius: $card-border-radius;
+  border: $border-style $border-width $colour--ash;
+  margin-bottom: $gutter-size--default * 2;
+  border-radius: $border-radius--card;
   overflow: hidden;
-  max-width: $mobile-screen-size - ($gutter-default * 2);
+  max-width: $breakpoint--mobile - ($gutter-size--default * 2);
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
 
-.card-image-container {
-  width: $card-width;
-  height: $card-height;
+.card__image-container {
+  width: $card__width;
+  height: $card__height;
   background-size: cover;
   background-position: 50% 50%;
   display: -webkit-box;
@@ -40,46 +40,45 @@
   }
 }
 
-.card-toolbar {
+.card__toolbar {
   position: absolute;
   top: 0;
   width: 100%;
-  padding: $gutter-default;
-  z-index: 2;
+  padding: $gutter-size--default;
 }
 
-.card-label {
+.card__label {
   position: absolute;
   -ms-flex-item-align: center;
            align-self: center;
-  padding: $gutter-default;
+  padding: $gutter-size--default;
 }
 
-.card-specifications {
-  padding: $gutter-default;
+.card__technical-specifications {
+  padding: $gutter-size--default;
 }
 
-.make, .model {
-  color: $white;
+.card__make, .card__model {
+  color: $colour--white;
 }
 
-.make {
-  font-size: $font-size-make-mobile;
-  margin-bottom: $gutter-default - 4;
+.card__make {
+  font-size: $font-size__card__make--mobile;
+  margin-bottom: $gutter-size--default - 4;
 }
 
-.model {
-  font-size: $font-size-model-mobile;
-  font-weight: $semibold;
+.card__model {
+  font-size: font-size__card__make--mobile;
+  font-weight: $font-weight--semibold;
 }
 
-.engine {
-  font-weight: $semibold;
-  font-size: $font-size-engine-mobile;
-  line-height: $line-height-engine-mobile;
+.card__engine {
+  font-weight: $font-weight--semibold;
+  font-size: $font-size__card__engine--mobile;
+  line-height: $line-height__card__engine--mobile;
 }
 
-.details {
-  font-size: $font-size-details-mobile;
-  line-height: $line-height-details-mobile;
+.card__details {
+  font-size: $font-size__card__details--mobile;
+  line-height: $line-height__card__details--mobile;
 }

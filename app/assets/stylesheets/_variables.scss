@@ -3,66 +3,67 @@ $border-style: solid;
 $border-width: 1px;
 
 // Breakpoints
-$mobile-screen-size: 320px;
-$tablet-screen-size: 768px;
-$desktop-screen-size: 1440px;
+$breakpoint--mobile: 320px;
+$breakpoint--tablet: 768px;
+$breakpoint--desktop: 1440px;
 
 // Brand Marks
-$logo-width-mobile: 126px;
-$logo-width-tablet: 159px;
-$logo-width-desktop: 142.5px;
+$logo__width--mobile: 126px;
+$logo__width--tablet: 159px;
+$logo__width--desktop: 142.5px;
 
-$logo-padding-mobile: 14px;
-$logo-padding-tablet: 23px;
-$logo-padding-desktop: 25px;
+$logo__padding--mobile: 14px;
+$logo__padding--tablet: 23px;
+$logo__padding--desktop: 25px;
 
 
 // Button
-$button-letter-spacing: 1px;
-$button-padding: 4px 20px;
-$delete-button-margin: 8px;
+$button__letter-spacing: 1px;
+$button__padding: 4px 20px;
+$button__margin--delete: 8px;
+$button__size--delete: 32px;
 // For button fonts, see 'Fonts' section
 
 // Colors
-$ash: #eeeeee;
-$black: #000000;
-$blue: #00a4ff;
-$dark-grey: #4d4f52;
-$light-grey: #f5f5f5;
-$mid-grey: #dddddd;
-$white: #ffffff;
+$colour--ash: #eeeeee;
+$colour--black: #000000;
+$colour--blue: #00a4ff;
+$colour--dark-grey: #4d4f52;
+$colour--light-grey: #f5f5f5;
+$colour--mid-grey: #dddddd;
+$colour--white: #ffffff;
 
 // Curves
-$button-border-radius: 16px;
-$card-border-radius: 6px;
+$border-radius--button: 16px;
+$border-radius--card: 6px;
 
 // Effects
-$icon-drop-shadow: rgba(0,0,0,0.75);
+$drop-shadow--icon: rgba(0,0,0,0.75);
 
-// Fonts
+// Fonts & Typography
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
-$base-font-family: 'Montserrat', sans-serif;
-$bold: 700;
-$semibold: 600;
+$font-family--base: 'Montserrat', sans-serif;
+$font-weight--bold: 700;
+$font-weight--semibold: 600;
 
-$h1-line-height: 48px;
-$h1-default: 40px;
-$h1-mobile: 32px;
+$header-font__line-height: 48px;
+$header-font__size: 40px;
+$header-font__size--mobile: 32px;
 
-$font-size-make-mobile: 15px;
-$font-size-model-mobile: 22px;
-$font-size-engine-mobile: 16px;
-$font-size-details-mobile: 14px;
+$font-size__card__make--mobile: 15px;
+$font-size__card__make--mobile: 22px;
+$font-size__card__engine--mobile: 16px;
+$font-size__card__details--mobile: 14px;
 
-$line-height-engine-mobile: 20px;
-$line-height-details-mobile: 20px;
+$line-height__card__engine--mobile: 20px;
+$line-height__card__details--mobile: 20px;
 
-$button-font-size: 14px;
+$button__font-size: 14px;
 
 // Layout
-$gutter-default: 16px;
-$header-height-mobile: 48px;
-$header-height-default: 72px;
-$page-title-height: 200px;
-$card-width: 288px;
-$card-height: 170px;
+$gutter-size--default: 16px;
+$branding-area__height--mobile: 48px;
+$branding-area__height: 72px;
+$page-title-container__height: 200px;
+$card__width: 288px;
+$card__height: 170px;

@@ -1,42 +1,41 @@
-header {
-  background-color: $blue;
+.branding-area {
+  background-color: $colour--blue;
 }
 
-.wrapper {
-  max-width: $mobile-screen-size;
+.branding-area__wrapper {
+  max-width: $breakpoint--mobile;
   margin: 0 auto;
-  padding-left: $gutter-default;
+  padding-left: $gutter-size--default;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: $header-height-mobile;
+  height: $branding-area__height--mobile;
 
   @include media(tablet) {
-    padding-left: $gutter-default * 4;
-    height: $header-height-default;
-    min-width: $mobile-screen-size + 1;
-    max-width: $tablet-screen-size;  }
+    padding-left: $gutter-size--default * 4;
+    height: $branding-area__height;
+    min-width: $breakpoint--mobile + 1;
+    max-width: $breakpoint--tablet;  }
 
   @include media(desktop) {
-    padding-left: $gutter-default * 4;
-    height: $header-height-default;
-    max-width: $desktop-screen-size;
+    padding-left: $gutter-size--default * 4;
+    max-width: $breakpoint--desktop;
   }
 }
 
-.logo-container {
+.branding-area__logo-container {
   display: inline-block;
-  @include setLogoWidthAndPadding($logo-width-mobile, $logo-padding-mobile);
+  @include setLogoWidthAndPadding($logo__width--mobile, $logo__padding--mobile);
 
   @include media(tablet) {
-    @include setLogoWidthAndPadding($logo-width-tablet, $logo-padding-tablet);
+    @include setLogoWidthAndPadding($logo__width--tablet, $logo__padding--tablet);
   }
 
   @include media(desktop) {
-    @include setLogoWidthAndPadding($logo-width-desktop, $logo-padding-desktop);
+    @include setLogoWidthAndPadding($logo__width--desktop, $logo__padding--desktop);
   }
 }
 
