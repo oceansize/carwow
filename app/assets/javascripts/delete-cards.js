@@ -1,6 +1,6 @@
 $( document ).ready(function() {
 
-  $('.btn--delete').click(function(e) {
+  $('.car-showcase').on("click", ".btn--delete", function(e) {
     e.preventDefault();
     $(this).closest(".card").remove();
   });

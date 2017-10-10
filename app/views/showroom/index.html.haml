@@ -4,3 +4,5 @@
 %article{class: "car-showcase clearfix"}
   - @cars.each do |car|
     = render partial: "card", locals: {car: car}
+
+%a{href: "#", class: "add-cards"} Text goes here
